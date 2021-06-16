@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<main class="container">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+<head>
+    <h1 id="title" class="text-center">Gaming Survey Form</h1>
+    <p id="description" class="text-center">Thank you for taking the time to help us improve future games</p>
+</head>
+
+<form id="survey-form">
+<div class="formgroup">
+        <label for="name-label" id="name-label">Name </label>
+        <input type="text" id="name" class="formcontrol" placeholder="John Doe" required/>
+        <label for="email-label" id="email-label">Email </label>
+        <input type="email" id="email" class="formcontrol" placeholder="john@email.com" required/>
+        <label for="number-label" id="number-label">Age<span class="clue">(optional)</span> </label>
+        <input type="number" id="number" class="formcontrol" placeholder="18" min="18" max="99"/>
+    </div>    
+
+<div class="formgroup">
+    <p>Which of the following systems do you play games on most often?</p>   
+    <select id="dropdown" name="dropdown" class="formcontrol">
+        <option value="" disabled selected>Please select</option>
+        <option>Playstation 4/5</option>
+        <option>Xbox One/Series</option>
+        <option>Nintendo Switch</option>
+        <option>PC</option>
+        <option>Mobile</option>
+    </select>    
+</div>
+
+<div class="formgroup">
+    <p>How often do you play games?</p>
+    <label><input type="radio" name="frequency" value="everyday" class="input-radio" checked/>Everyday</label>
+    <label><input type="radio" name="frequency" value="fewtimesaweek" class="input-radio" checked/>A few times a week</label>
+    <label><input type="radio" name="frequency" value="fewtimesamonth" class="input-radio" checked/>A few times a month</label>
+    <label><input type="radio" name="frequency" value="almostnever" class="input-radio" checked/>Almost never</label>
+</div>
+
+<div class="formgroup">
+    <p>What genres of games do you play?</p>
+        <label><input type="checkbox" name="genre" value="shooter" class="input-checkbox">Shooters (FPS/TPS)</label>
+        <label><input type="checkbox" name="genre" value="moba" class="input-checkbox">MOBA</label>
+        <label><input type="checkbox" name="genre" value="roleplaying" class="input-checkbox">RPG/ARPG</label>
+        <label><input type="checkbox" name="genre" value="rts" class="input-checkbox">Real-time Strategy</label>
+        <label><input type="checkbox" name="genre" value="Sports" class="input-checkbox">Sports</label>
+        <label><input type="checkbox" name="genre" value="Survival" class="input-checkbox">Survival</label>
+        <label><input type="checkbox" name="genre" value="Sandbox" class="input-checkbox">Sandbox</label>
+</div>
+
+
+
+<div class="formgroup">
+    <label for="features">What are the best features about your favourite game genres?</label>
+        <textarea id="features" name="features" rows="4" cols="50" placeholder="Enter your comment here..."></textarea>
+</div>
+
+<div class="formgroup">
+    <button type="submit" id="submit" class="submit-button">Submit</button>
+</div>
+
+</form>
+</main>
+<html>
